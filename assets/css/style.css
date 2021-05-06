@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*Обнуление*/
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -75,15 +75,132 @@ h1, h2, h3, h4, h5, h6 {
 
 /*--------------------*/
 /*Обнуление*/
+body {
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1152px;
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #21243d;
+}
+
 ._container {
   width: 100%;
-  max-width: 1220px;
+  max-width: 876px;
   padding: 0 10px;
-  margin-bottom: 0 auto;
+  margin: 0 auto;
 }
 
 ._container2 {
   width: 100%;
-  max-width: 1220px;
-  margin-bottom: 0 auto;
+  max-width: 876px;
+  margin: 0 auto;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+}
+
+.nav {
+  padding-top: 27px;
+  padding-right: 60px;
+  height: 50%;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.menu__item {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: right;
+  color: #000000;
+  margin-right: 50px;
+}
+
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.link:active {
+  color: #ff6464;
+}
+
+.link:hover {
+  color: #ff6464;
+}
+
+.block__preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 140px;
+}
+
+.section__preview_title {
+  margin-top: 18px;
+}
+
+.section__preview_content {
+  margin-bottom: 38px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  color: #21243d;
+  margin-bottom: 40px;
+}
+
+.title h1 {
+  font-weight: 900;
+}
+
+.btn {
+  width: 208px;
+  height: 47px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  color: #ffffff;
+  background: #ff6464;
+  border-radius: 2px;
+}
+
+.preview__avatar {
+  margin-left: 115px;
 }

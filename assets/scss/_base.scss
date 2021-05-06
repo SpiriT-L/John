@@ -4,9 +4,20 @@
 
 //
 
-body{
+body {
   background: $bg;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1152px;
+  font-family: Heebo;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
 
+  color: #21243d;
 }
 
 // Главный контейнер
@@ -14,13 +25,16 @@ body{
   width: 100%;
   max-width: $max-width + 20px;
   padding: 0 10px;
-  margin-bottom: 0 auto;
+  margin: 0 auto;
 }
 
 // Второй контейнер
 ._container2 {
   width: 100%;
   max-width: $max-width + 20px;
-  margin-bottom: 0 auto;
+  margin: 0 auto;
 }
 
+main {
+  flex: 1 1 auto;
+}
