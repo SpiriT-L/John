@@ -68,6 +68,7 @@
       @media (max-width: $md) {
         margin-top: 0;
         margin-bottom: 21px;
+        text-align: center;
       }
     }
 
@@ -104,7 +105,7 @@
     font-size: 38px;
   }
   @media (max-width: $md) {
-    text-align: center;
+   
     font-size: 32px;
   }
 }
@@ -214,6 +215,9 @@ a.viewall_link {
 
     color: #21243d;
     margin: 0 0 17px 0;
+    @media (max-width: $md){
+    font-size: 22px;
+    }
   }
 
   // .column__info
@@ -240,6 +244,135 @@ a.viewall_link {
     /* Dark Color */
 
     color: #21243d;
+  }
+}
+
+//section works
+.section {
+  // .section__works
+
+  &__works {
+
+  }
+}
+
+.works {
+  @media (max-width: $md){
+    &>div:not(:first-child) {
+      display: none;
+    }
+  }
+  // .works__title
+
+  &__title {
+    font-size: 22px;
+    line-height: 60px;
+    color: #21243d;
+    margin: 22px 0;
+  }
+
+  // .works__item
+
+  &__item {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 0 0 30px 0;
+    margin: 0 0 30px 0;
+    @media (max-width: $md) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      // display: none;
+    
+    }
+  }
+
+  // .works__img
+
+  &__img {
+    display: block;
+    position: relative;
+    margin: 0 18px 0 0;
+    // .works__img_item
+    @media (max-width: $md) {
+      width: 100%;
+      height: auto;
+      margin: 0 0 18px 0;
+    }
+    &_item {
+      // display: block;
+      // position: absolute;
+      object-fit: cover;
+      @media (max-width: $md) {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  // .works__content
+
+  &__content {
+    // .works__content_title
+
+    &_title {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 44px;
+
+      color: #21243d;
+      margin-bottom: 16px;
+      @media (max-width: $md){
+      font-size: 24px;
+      }
+    }
+
+    // .works__content_info
+
+    &_info {
+      display: flex;
+      align-items: center;
+      margin-bottom: 17px;
+    }
+
+    // .works__content_content
+
+    &_text {
+      font-size: 16px;
+      line-height: 23px;
+
+      color: #21243d;
+    }
+  }
+}
+.info {
+  // .info__year
+
+  &__year {
+    margin: 0 26px 0 0;
+    // display: inline-block;
+
+    & span {
+      width: 62px;
+      height: 25px;
+
+      background: #142850;
+      border-radius: 16px;
+      font-weight: 900;
+      font-size: 18px;
+
+      color: #ffffff;
+      padding: 1px 10px 0 10px;
+    }
+  }
+
+  // .info__section
+
+  &__section {
+    font-size: 20px;
+    line-height: 29px;
+
+    color: #8695a4;
   }
 }
 

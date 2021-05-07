@@ -1,0 +1,19 @@
+@import '_base';
+
+.works {
+  @media (max-width: $md) {
+    display: flex;
+  }
+}
+.section{
+  &__works{
+    &_title{
+      margin: 0 0 25px 0;
+      @media (max-width: $md) {
+        margin-top: 0;
+        margin-bottom: 13px;
+       
+      }
+    }
+  }
+}
