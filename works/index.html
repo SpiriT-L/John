@@ -11,78 +11,23 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <ul class="menu">
-          <li class="menu__item">
-            <a href="./works/index.html" class="menu__item_link link">Works</a>
-          </li>
-          <li class="menu__item">
-            <a href="./blog/index.html" class="menu__item_link link">Blog</a>
-          </li>
-          <li class="menu__item">
-            <a href="/" class="menu__item_link link">Contact</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="header__container">
+        <a href="" class="header__logo"></a>
+        <div class="header__menu menu">
+          <div class="menu__icon">
+            <span></span>
+          </div>
+          <nav class="menu__body">
+            <ul class="menu__list">
+              <li><a data-goto=".section__" href="/works/index.html" class="menu__link active">Works</a></li>
+              <li><a data-goto=".section__" href="/blog/index.html" class="menu__link">Blog</a></li>
+              <li><a data-goto=".section__" href="/index.html" class="menu__link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
     </header>
     <main class="main">
-      <!--       <section class="block__preview _container">
-        <div class="section__preview">
-          <div class="section__preview_title title">
-            <h1>Hi, I am John, Creative Technologist</h1>
-          </div>
-          <div class="section__preview_content">
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </div>
-          <div class="section__preview_btn">
-            <button class="btn">Download Resume</button>
-          </div>
-        </div>
-        <div class="preview__avatar">
-          <img src="./assets/images/avatar.jpg" alt="John" />
-        </div>
-      </section>
-      <section class="posts section">
-        <div class="_container">
-          <div class="post__header">
-            <div class="post__header_title">Recent posts</div>
-            <div class="post__header_viewall viewall">
-              <a href="#!" class="viewall_link">View all</a>
-            </div>
-          </div>
-          <div class="post__column">
-            <div class="column__item">
-              <div class="column__title">
-                Making a design system from scratch
-              </div>
-              <div class="column__info">
-                12 Feb 2020 <span>|</span> Design, Pattern
-              </div>
-              <div class="column__content">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </div>
-            </div>
-
-            <div class="column__item">
-              <div class="column__title">
-                Creating pixel perfect icons in Figma
-              </div>
-              <div class="column__info">
-                12 Feb 2020 <span>|</span> Figma, Icon Design
-              </div>
-              <div class="column__content">
-                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-                amet sint. Velit officia consequat duis enim velit mollit.
-                Exercitation veniam consequat sunt nostrud amet.
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
       <section class="section__works _container">
         <div class="section__works_title title"><h1>Works</h1></div>
 
@@ -96,7 +41,9 @@
               />
             </div>
             <div class="works__content">
-              <div class="works__content_title">Designing Dashboards</div>
+              <div class="works__content_title">
+                <a class="content_title_link" href="#!">Designing Dashboards</a>
+              </div>
               <div class="works__content_info">
                 <div class="info__year"><span>2020</span></div>
                 <div class="info__section">Dashboard</div>
@@ -118,7 +65,10 @@
               />
             </div>
             <div class="works__content">
-              <div class="works__content_title">Vibrant Portraits of 2020</div>
+              <div class="works__content_title">
+
+                <a class="content_title_link" href="#!">Vibrant Portraits of 2020</a>
+              </div>
               <div class="works__content_info">
                 <div class="info__year"><span>2018</span></div>
                 <div class="info__section">Illustration</div>
@@ -140,7 +90,9 @@
               />
             </div>
             <div class="works__content">
-              <div class="works__content_title">36 Days of Malayalam type</div>
+              <div class="works__content_title">36 Days of Malayalam type
+                <a class="content_title_link" href="#!">36 Days of Malayalam type</a>
+              </div>
               <div class="works__content_info">
                 <div class="info__year"><span>2018</span></div>
                 <div class="info__section">Typography</div>
@@ -162,7 +114,9 @@
               />
             </div>
             <div class="works__content">
-              <div class="works__content_title">Components</div>
+              <div class="works__content_title">Components
+                <a class="content_title_link" href="#!">Components</a>
+              </div>
               <div class="works__content_info">
                 <div class="info__year"><span>2018</span></div>
                 <div class="info__section">Components, Design</div>
@@ -212,5 +166,6 @@
       </div>
       <div class="copiring">Copyright ©2020 All rights reserved</div>
     </footer>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

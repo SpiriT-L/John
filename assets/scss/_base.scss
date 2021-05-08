@@ -1,6 +1,7 @@
 @import '_reset';
 @import '_fonts';
 @import '_variable';
+@import '_menu';
 
 //
 
@@ -36,5 +37,10 @@ body {
 }
 
 main {
+  margin: 70px 0 0 0;
   flex: 1 1 auto;
+}
+
+a.active {
+  color: #ff6464;
 }
